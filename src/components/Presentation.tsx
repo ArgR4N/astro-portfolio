@@ -38,7 +38,7 @@ export default function Presentation() {
 
   return (
     <div className="flex items-center justify-center">
-      <section style={{"backgroundColor":"#E4FDE1"}} className="w-[100vw] h-[95.5vh] *absolute   *left-animated flex flex-col items-center inset-0 top-[4.5vh] justify-center gap-8  bg-blue-200">
+      <section style={{"backgroundColor":"#E4FDE1"}} className="w-[100vw] h-[92vh] lg:h-[93.5vh] *absolute   *left-animated flex flex-col items-center inset-0 top-[4.5vh] justify-center gap-8  bg-blue-200">
         <div>
           <h1 className="text-5xl flex ">Hi there!</h1>
           <h1 className="text-5xl flex gap-2 ml-16 pb-2">I´m <div className="name-animated"> Ramiro Reinaldo</div></h1>
