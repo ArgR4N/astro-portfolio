@@ -42,14 +42,14 @@ export default function Presentation() {
       <section style={{"backgroundColor":"#E4FDE1"}} className="w-[100vw] h-[92vh] lg:h-[93.5vh] *absolute   *left-animated flex flex-col items-center inset-0 top-[4.5vh] justify-center gap-8  bg-blue-200">
         <div>
           <h1 className="text-5xl flex ">Hi there!</h1>
-          <h1 className="text-5xl flex gap-2 ml-16 pb-2">I´m <div className="name-animated"> Ramiro Reinaldo</div></h1>
+          <h1 className="text-5xl flex gap-2 ml-16 ">I´m <div className="name-animated cursor-pointer "> Ramiro Reinaldo</div></h1>
           <h2 className="ml-32">a Computer Science Student and Web Dev.</h2>
         </div>
 
         <div className=" flex items-center justify-center gap-12 text-2xl w-full">
           {presentationLinks.map((link) => (
             <link.icon
-              className={`hover:brightness-125 cursor-pointer text-${link.color}`}
+              className={`hover:text-red-500 duration-100 cursor-pointer text-gray-900`}
             />
           ))}
         </div>

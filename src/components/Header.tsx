@@ -48,7 +48,7 @@ export default function Header() {
       <section className="w-1/6">
         <a href="" className="text-3xl flex items-center justify-center gap-5 w-100"> 
             <div className={`${selectedEmoji.animation} opacity-0 hover:opacity-100 duration-100 text-2xl  flex justify-center items-center`}>{selectedEmoji.text}</div>
-            <h1 className="text-2xl" >Ramiro Reinaldo</h1>
+            <h1 className="text-2xl name-animated-hover" >Ramiro Reinaldo</h1>
         </a>
       </section>
       <section className=" w-2/3 text-gray-900 text-md  justify-center  items-center gap-5 lg:gap-20 hidden md:flex ">

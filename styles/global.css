@@ -6,6 +6,24 @@
     animation-fill-mode:forwards;
 }
 
+.name-animated-hover:hover {
+    animation-name: inclination;
+    animation-iteration-count: 1;
+    animation-duration: 1.25s;
+    animation-fill-mode:forwards;
+}
+
+.name-animated-hover:hover::after {
+    content: "";
+    animation-name: apparition;
+    animation-iteration-count: 1;
+    animation-duration: 1s;
+    animation-fill-mode:forwards;
+    display: block;
+    background-color: #000;
+    transition: width 0.3s;
+}
+
 .name-animated::after {
     content: "";
     animation-name: apparition;
@@ -44,5 +62,5 @@
 
 @keyframes inclination {
     0%  {rotate: 0deg; border: 100% 0 0 0 solid #000;}
-    100%  {rotate: 1.75deg;}
+    100%  {rotate: 1.75deg; color: #F45B69;}
 }
