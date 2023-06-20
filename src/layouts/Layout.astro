@@ -1,36 +1,45 @@
 ---
-export interface Props {
-	title: string;
-}
-
-const { title } = Astro.props;
+import Header from "../components/Header.tsx";
+import Footer from "../components/Footer.tsx";
 ---
 
 <!DOCTYPE html>
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="description" content="Astro description">
+		<meta name="description" content="Astro description" />
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
-		<title>{title}</title>
+		<title>R4N Portfolio</title>
 	</head>
 	<body>
-		<slot />
+		<Header client:load/>
+		<main class=" mt-[8vh] lg:mt-[6.5vh]">
+			<section class="flex aling-center justify-center absolute w-1/3 inset-x-1/3 hover:rotate-3 duration-200 bottom-4 z-20" >
+					<a href="#projects" class=" main-button-animated px-2 hover:underline   flex items-center justify-center bg-red-400 h-10 rounded-sm text-gray-900 "> Some work ↴ </a>
+			</section>
+			<slot />
+		</main>
+		<Footer />
 	</body>
 </html>
 <style is:global>
 	:root {
 		--accent: 124, 58, 237;
-		--accent-gradient: linear-gradient(45deg, rgb(var(--accent)), #da62c4 30%, white 60%);
+		--accent-gradient: linear-gradient(
+			45deg,
+			rgb(var(--accent)),
+			#da62c4 30%,
+			white 60%
+		);
 	}
 	html {
 		font-family: system-ui, sans-serif;
-		background-color: #F6F6F6;
+		background-color: #E4FDE1;
 	}
 	code {
-		font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-			Bitstream Vera Sans Mono, Courier New, monospace;
+		font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
+			DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
 	}
 </style>
