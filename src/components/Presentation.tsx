@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
-import { BsGithub, BsLinkedin } from "react-icons/bs";
+import {BsGithub, BsLinkedin} from "react-icons/bs/index";
+
 function generalPresentation() {
   return (
     <div>
