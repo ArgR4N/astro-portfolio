@@ -1,12 +1,5 @@
 import { useState, useEffect } from "react";
-import { FaGithub } from "react-icons/fa";
-import {
-  BsHammer,
-  BsPeopleFill,
-  BsEnvelopeFill,
-  BsFillFileEarmarkTextFill,
-} from "react-icons/bs";
-import "../../styles/global.css";
+import "../styles/global.css";
 
 const OPTIONS = [
   { text: "Background", link: "#background" },
