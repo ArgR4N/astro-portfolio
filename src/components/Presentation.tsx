@@ -14,12 +14,12 @@ function generalPresentation() {
 const presentationLinks = [
   {
     icon: BsGithub,
-    link: "github.com/argr4n",
+    link: "https://github.com/argr4n",
     color: "black",
   },
   {
     icon: BsLinkedin,
-    link: "g",
+    link: "https://www.linkedin.com/in/ramiro-reinaldo-0366a3201",
     color: "blue-600",
   },
 ];
