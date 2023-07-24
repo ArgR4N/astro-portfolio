@@ -48,9 +48,11 @@ export default function Presentation() {
 
         <div className=" flex items-center justify-center gap-12 text-2xl w-full">
           {presentationLinks.map((link) => (
-            <link.icon
+            <a className={`hover:text-red-500 duration-100 cursor-pointer text-gray-900 no-underline`} href={link.link}>
+              <link.icon
               className={`hover:text-red-500 duration-100 cursor-pointer text-gray-900`}
-            />
+              />
+            </a>
           ))}
         </div>
       </section>
